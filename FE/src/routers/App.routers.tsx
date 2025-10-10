@@ -9,9 +9,9 @@ function AppRouter() {
 	<BrowserRouter>
     <Routes>
 
-      <Route path="/" element={<HomePage />} />
+      <Route path="/home" element={<HomePage />} />
       {/* <Route path="/login" element={<LoginPage />} /> */}
-		<Route path="/auth" element={<AuthPage />} />
+		<Route path="/" element={<AuthPage />} />
 		</Routes>
 		</BrowserRouter>
   )

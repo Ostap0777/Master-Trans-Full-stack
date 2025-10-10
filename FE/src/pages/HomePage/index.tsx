@@ -1,8 +1,11 @@
 import React from 'react'
+import InputMUI from '../../components/ui/Input/index';
 
 function HomePage() {
   return (
-	 <div>indexvv</div>
+	 <div>indexvv
+		<InputMUI />
+	 </div>
   )
 }
 
