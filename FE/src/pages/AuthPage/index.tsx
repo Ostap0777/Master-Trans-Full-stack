@@ -30,9 +30,9 @@ function AuthPage({ setIsAuth }: AuthPageProps) {
 		console.log('Form submitted');
 	 }}>
 		<Typography>Autorithaion</Typography>
-		<InputMUI 
-		onChange={(e: React.FormEvent) => setEmail(e.target.value)}
-		/>
+		  <InputMUI 
+		    onChange={(e: React.FormEvent) => setEmail(e.target.value)}
+		  />
 		<InputMUI
 		onChange={(e:React.FormEvent) => setPassword(e.target.value)}
 		/>
