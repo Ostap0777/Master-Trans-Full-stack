@@ -1,0 +1,14 @@
+{
+	"name": "master-trans",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+	  "dev": "concurrently \"npm run dev --prefix FE\" \"npm run dev --prefix BE\"",
+	  "start:fe": "npm run dev --prefix FE",
+	  "start:be": "npm run dev --prefix BE"
+	},
+	"devDependencies": {
+	  "concurrently": "^9.0.0"
+	}
+ }
+ 
