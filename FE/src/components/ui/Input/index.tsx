@@ -6,15 +6,17 @@ interface InputMUIProps {
   title?: string;
   placeholder?: string;
   value: string;
+  type: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-function InputMUI({ disabled = false, title = '', placeholder = '', value, onChange }: InputMUIProps) {
+function InputMUI({ disabled = false, title = '', placeholder = '', value, onChange, type }: InputMUIProps) {
   return (
     <Box mb={2}>
       {title && <Typography variant="subtitle1">{title}</Typography>}
       <TextField
         fullWidth
+		  type={type} 
         variant="outlined"
         placeholder={placeholder}
         disabled={disabled}

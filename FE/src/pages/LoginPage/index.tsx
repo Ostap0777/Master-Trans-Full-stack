@@ -31,11 +31,18 @@ function LoginPage({ setIsAuth }: LoginPageProps) {
 	 }}>
 		<Typography>Login</Typography>
 		<InputMUI 
-		onChange={(e: React.FormEvent) => setEmail(e.target.value)}
-		/>
-		<InputMUI
-		onChange={(e:React.FormEvent) => setPassword(e.target.value)}
-		/>
+  type="text"
+  value={email}                 
+  onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
+  placeholder="Email"
+/>
+
+<InputMUI
+  type="password"
+  value={password}         
+  onChange={(e: React.ChangeEvent<HTMLInputElement>) => setPassword(e.target.value)}
+  placeholder="Password"
+/>
 		<Typography   onClick={() => navigate('/auth')}>Зареєструватися</Typography>
 		{error && <Typography sx={{color: 'red'}}>{error}</Typography>}
 		<ButtonMUI
