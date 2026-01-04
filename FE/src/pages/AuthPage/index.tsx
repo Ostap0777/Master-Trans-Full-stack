@@ -32,14 +32,14 @@ function AuthPage({ setIsAuth }: AuthPageProps) {
 		<Typography>Autorithaion</Typography>
 		<InputMUI 
   type="text"
-  value={email}                     // обов'язково value
+  value={email}              
   onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
   placeholder="Email"
 />
 
 <InputMUI
   type="password"
-  value={password}                  // обов'язково value
+  value={password}              
   onChange={(e: React.ChangeEvent<HTMLInputElement>) => setPassword(e.target.value)}
   placeholder="Password"
 />
