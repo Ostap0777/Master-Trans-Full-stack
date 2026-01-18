@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Box, TextField, Typography,Input } from '@mui/material';
 import InputMUI from '../../components/ui/Input/index';
 import Header from '../../components/layout/Header/index';
-import Footer from '../../components/layout/Footer/index';
+import { Link } from 'react-router-dom';
 
 function HomePage({setIsAuth}) {
 	const [inputName, setInputName] = useState()
@@ -68,7 +68,7 @@ console.log(inputInfo)
 				</Box>
 			))}
 		</Box>
-		<Footer/>
+		<Link to="/customer/settings/my-orders">Settings</Link>
 	 </Box>
   )
 }
