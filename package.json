@@ -2,16 +2,17 @@
   "dependencies": {
     "@nestjs/mapped-types": "*"
   },
-	"name": "master-trans",
-	"version": "1.0.0",
-	"private": true,
-	"scripts": {
-	  "dev": "concurrently \"npm run dev --prefix FE\" \"npm run dev --prefix BE\"",
-	  "start:fe": "npm run dev --prefix FE",
-	  "start:be": "npm run dev --prefix BE"
-	},
-	"devDependencies": {
-	  "concurrently": "^9.0.0"
-	}
- }
- 
+  "name": "master-trans",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix FE\" \"npm run dev --prefix BE\"",
+    "start:fe": "npm run dev --prefix FE",
+    "start:be": "npm run dev --prefix BE"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5"
+  }
+}
