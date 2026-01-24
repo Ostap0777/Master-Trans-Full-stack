@@ -1,6 +1,6 @@
-import React from 'react';
-import { Box, TextField, Typography, Button, Divider } from '@mui/material';
-import styles from './styles';
+import React from 'react'
+import { Box, TextField, Typography, Button, Divider } from '@mui/material'
+import styles from './styles'
 
 function CreateItemsPage() {
   return (
@@ -55,15 +55,25 @@ function CreateItemsPage() {
         <Typography variant="h6">Transport</Typography>
 
         <TextField label="Truck Type" fullWidth />
-        <TextField label="Loading Date" type="date" fullWidth InputLabelProps={{ shrink: true }} />
-        <TextField label="Delivery Date" type="date" fullWidth InputLabelProps={{ shrink: true }} />
+        <TextField
+          label="Loading Date"
+          type="date"
+          fullWidth
+          InputLabelProps={{ shrink: true }}
+        />
+        <TextField
+          label="Delivery Date"
+          type="date"
+          fullWidth
+          InputLabelProps={{ shrink: true }}
+        />
       </Box>
 
       <Button variant="contained" sx={styles.submitButton}>
         Create Cargo
       </Button>
     </Box>
-  );
+  )
 }
 
-export default CreateItemsPage;
+export default CreateItemsPage
